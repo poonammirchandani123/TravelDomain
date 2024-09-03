@@ -20,7 +20,7 @@ public class VerifyBookingDetailsTest {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.orbitz.com"); // replace with actual travel site URL
+        driver.get("https://www.skyscanner.com"); // replace with actual travel site URL
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));// Wait up to 10 seconds
         WebElement flightDetails = wait.until(ExpectedConditions.presenceOfElementLocated(By.id("flightDetails")));
 
